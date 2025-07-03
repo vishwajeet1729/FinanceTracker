@@ -56,35 +56,35 @@ export const FinancialRecordList = () => {
       {
         Header: "Description",
         accessor: "description",
-        cell: (props) => (
+        cell: (props:any) => (
           <EditableCell {...props} updateRecord={updateCellRecord} editable={true} />
         )
       },
       {
         Header: "Amount",
         accessor: "amount",
-        cell: (props) => (
+        cell: (props:any) => (
           <EditableCell {...props} updateRecord={updateCellRecord} editable={true} />
         )
       },
       {
         Header: "Category",
         accessor: "category",
-        cell: (props) => (
+        cell: (props:any) => (
           <EditableCell {...props} updateRecord={updateCellRecord} editable={true} />
         )
       },
       {
         Header: "payment Method",
         accessor: "paymentMethod",
-        cell: (props) => (
+        cell: (props:any) => (
           <EditableCell {...props} updateRecord={updateCellRecord} editable={true} />
         )
       },
       {
         Header: "Date",
         accessor: "date",
-        cell: (props) => (
+        cell: (props:any) => (
           <EditableCell {...props} updateRecord={updateCellRecord} editable={false} />
         )
       },
@@ -92,7 +92,7 @@ export const FinancialRecordList = () => {
       {
         Header: "Delete",
         id: "delete",
-        cell: (row) => (
+        cell: (row:any) => (
               <button onClick={()=>deleteRecord(row.row.original._id)} className="button">Delete</button>     
         )
       }
